@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "subtitle-alchemy"
-version = "0.1.20"
+version = "0.1.30"
 description = "Process subtitle files with ease."
 authors = [
     {name = "Juan Cervantes", email = "stall-breezes.0t@icloud.com"},
@@ -16,6 +16,9 @@ dependencies = [
     "funasr>=1.1.6",
     "pypinyin>=0.52.0",
     "loguru>=0.7.2",
+    "torch>=2.7.1",
+    "torchvision>=0.22.1",
+    "torchaudio>=2.7.1",
 ]
 license = {file = "LICENSE"}
 readme = "README.md"
@@ -38,12 +41,6 @@ publish-url = "https://upload.pypi.org/legacy/"
 explicit = true
 
 [dependency-groups]
-cpu = [
-    "torch>=2.4.1",
-    "torchvision>=0.19.1",
-    "torchaudio>=2.4.1",
-]
-
 # Development dependencies
 dev = [
     "pytest>=8.3.2",

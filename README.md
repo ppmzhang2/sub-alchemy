@@ -9,19 +9,17 @@
 
 ## Installation
 
-We recommend using [Conda](https://docs.conda.io/en/latest/) to manage the dependencies. Clone the repository and create a new Conda environment using the provided `conda-gpu-subalch-py310.yaml` file:
+You can install via pip:
 
 ```bash
-git clone https://github.com/ppmzhang2/sub-alchemy.git
-cd sub-alchemy
-conda env create -f conda-gpu-subalch-py310.yaml
-conda activate py310-gpu-subalch
+pip install -U subtitle-alchemy
 ```
 
-For CPU-only installations, simply use `pip` from PyPI:
+Or install from source:
 
 ```bash
-pip install sub-alchemy[cpu]
+git clone https://github.com/ppmzhang2/subtitle-alchemy && cd subtitle-alchemy
+pip install -e .
 ```
 
 ## Usage
@@ -46,7 +44,7 @@ subalch align path_to_sketch.npz path_to_transcript --form srt --threshold 500
 
 ## Dependencies
 
-- Python 3.10
+- Python 3.11+
 
 ## Contributing
 

@@ -1794,14 +1794,12 @@ dependencies = [
     { name = "loguru" },
     { name = "modelscope" },
     { name = "pypinyin" },
-]
-
-[package.dev-dependencies]
-cpu = [
     { name = "torch" },
     { name = "torchaudio" },
     { name = "torchvision" },
 ]
+
+[package.dev-dependencies]
 dev = [
     { name = "ipython", version = "8.37.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "ipython", version = "9.3.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
@@ -1818,14 +1816,12 @@ requires-dist = [
     { name = "loguru", specifier = ">=0.7.2" },
     { name = "modelscope", specifier = ">=1.18.0" },
     { name = "pypinyin", specifier = ">=0.52.0" },
+    { name = "torch", specifier = ">=2.7.1" },
+    { name = "torchaudio", specifier = ">=2.7.1" },
+    { name = "torchvision", specifier = ">=0.22.1" },
 ]
 
 [package.metadata.requires-dev]
-cpu = [
-    { name = "torch", specifier = ">=2.4.1" },
-    { name = "torchaudio", specifier = ">=2.4.1" },
-    { name = "torchvision", specifier = ">=0.19.1" },
-]
 dev = [
     { name = "ipython", specifier = ">=8.27.0" },
     { name = "pyright", specifier = ">=1.1.402" },
